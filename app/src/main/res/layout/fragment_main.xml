@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/colorAccent"
+        android:gravity="center"
+
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="72sp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.lovekeshkumar.projectmvpbase.custom.CustomRecyclerView
+            android:visibility="gone"
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+
+
+        <TextView
+            android:id="@+id/swipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:text="Swipe to top" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:visibility="gone"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

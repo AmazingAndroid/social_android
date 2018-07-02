@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ProjectMvpBase</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="log_in">Login</string>
+    <string name="hello"><![CDATA[<b>The Awesome Sliding Up Panel</b><br/> Brought to you by<br/><a href="http://umanoapp.com">http://umanoapp.com</a>]]></string>
+    <string name="follow"><![CDATA[Follow us<br/>on <a href="http://twitter.com/umanoapp">Twitter</a>]]></string>
+
+    <string name="fb_button_like">Like</string>
+    <string name="fb_button_comment">Comment</string>
+    <string name="fb_button_share">Share</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--==========================fontello=============================-->
+    <string name="fontello_hrt_full">&#xe800;</string>
+    <string name="fontello_hrt_empty">&#xe801;</string>
+    <string name="fontello_download">&#xe802;</string>
+    <string name="fontello_upload">&#xe803;</string>
+    <string name="fontello_chat">&#xe804;</string>
+    <string name="fontello_chat_empty">&#xe805;</string>
+    <string name="fontello_hrt2_empty">&#xe806;</string>
+    <string name="fontello_hrt2_full">&#xe807;</string>
+    <string name="fontello_edit">&#xe808;</string>
+    <string name="fontello_video">&#xe809;</string>
+    <string name="fontello_cart">&#xe810;</string>
+    <string name="fontello_location">&#xe80a;</string>
+    <string name="fontello_world">&#xe811;</string>
+    <string name="fontello_location2">&#xe80b;</string>
+    <string name="fontello_music">&#xe80e;</string>
+    <string name="fontello_search">&#xe80f;</string>
+    <string name="fontello_toggal_off">&#xf204;</string>
+    <string name="fontello_toggal_on">&#xf205;</string>
+    <string name="what_a">What a handsome boy!</string>
+    <string name="biscut">Biscuit wears Caspar in Pearled Tortoise</string>
+    <string name="hashtag">\@warbyparker</string>
+</resources>

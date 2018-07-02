@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@android:color/transparent"
+    card_view:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tag_and_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/recyle_view2"
+                    style="@style/RecyclerViewStyle" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/text_line_one"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:gravity="left"
+                    android:text="@string/what_a" />
+
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/text_line_two"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:gravity="left"
+                    android:text="@string/biscut" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/like_and_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                    android:id="@+id/people_likes_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fontello_hrt_full"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    tools:ignore="SpUsage" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/total_like_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="6.3k"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:textSize="10sp" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                    android:id="@+id/viedo_view_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fontello_video"
+                    android:textColor="@color/white_30_percent"
+                    android:textSize="18sp"
+                    tools:ignore="SpUsage" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/total_video_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="10.3k"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/upload_and_cmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                    android:id="@+id/video_upload_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:text="@string/fontello_upload"
+                    android:textColor="@color/white_30_percent"
+                    android:textSize="18sp"
+                    tools:ignore="SpUsage" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/video_upload_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="6.3k"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:textSize="10sp"
+                    android:visibility="invisible" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                    android:id="@+id/viedo_chat_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fontello_chat"
+                    android:textColor="@color/white_30_percent"
+                    android:textSize="18dp"
+                    tools:ignore="SpUsage" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    android:id="@+id/video_chat_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1.8k"
+                    style="@style/TextViewAppearance.Caption1.1"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_hashtag"
+            android:orientation="horizontal">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/text_hashtag_name"
+                style="@style/TextViewAppearance.Caption1"
+                android:layout_gravity="left|center"
+                android:gravity="left|center"
+                android:text="@string/hashtag"
+                android:textColor="@color/material_blue_A100" />
+
+            <EditText
+                android:id="@+id/chat_massage"
+                style="@style/EditViewAppearance2"
+                android:hint="write something..."
+                android:imeOptions="actionNext"
+                 />
+
+            <!--  android:textCursorDrawable="@drawable/mybg"-->
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

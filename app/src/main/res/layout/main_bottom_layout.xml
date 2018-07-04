@@ -41,6 +41,7 @@
                     android:id="@+id/text_line_one"
                     style="@style/TextViewAppearance.Caption1.1"
                     android:gravity="left"
+                    android:textColor="@color/white_100_percent"
                     android:text="@string/what_a" />
 
 
@@ -48,6 +49,7 @@
                     android:id="@+id/text_line_two"
                     style="@style/TextViewAppearance.Caption1.1"
                     android:gravity="left"
+                    android:textColor="@color/white_100_percent"
                     android:text="@string/biscut" />
             </LinearLayout>
 
@@ -88,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/fontello_video"
-                    android:textColor="@color/white_30_percent"
+                    android:textColor="@color/white_100_percent"
                     android:textSize="18sp"
                     tools:ignore="SpUsage" />
 
@@ -122,7 +124,7 @@
                     android:gravity="center"
 
                     android:text="@string/fontello_upload"
-                    android:textColor="@color/white_30_percent"
+                    android:textColor="@color/white_100_percent"
                     android:textSize="18sp"
                     tools:ignore="SpUsage" />
 
@@ -142,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/fontello_chat"
-                    android:textColor="@color/white_30_percent"
+                    android:textColor="@color/white_100_percent"
                     android:textSize="18dp"
                     tools:ignore="SpUsage" />
 
@@ -173,13 +175,14 @@
                 android:layout_gravity="left|center"
                 android:gravity="left|center"
                 android:text="@string/hashtag"
-                android:textColor="@color/material_blue_A100" />
+                android:textColor="@color/white_100_percent" />
 
             <EditText
                 android:id="@+id/chat_massage"
                 style="@style/EditViewAppearance2"
                 android:hint="write something..."
                 android:imeOptions="actionNext"
+
                  />
 
             <!--  android:textCursorDrawable="@drawable/mybg"-->

@@ -5,19 +5,24 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
 import com.example.lovekeshkumar.projectmvpbase.R;
 import com.example.lovekeshkumar.projectmvpbase.activity.listener.RecyclerClickListener;
 import com.example.lovekeshkumar.projectmvpbase.adapter.HashtagMainPageAdapter;
@@ -64,7 +69,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     private RecyclerView mRecyclerView;
     private RecyclerView mRecyclerViewHashtag;
     private LinearLayoutManager mLayoutManager;
-    private LinearLayoutManager mLayoutManagerhashtAg;
+    private GridLayoutManager mLayoutManagerhashtAg;
 
     public static VideoRecyclerViewFragment newInstance(int param1) {
         VideoRecyclerViewFragment fragment = new VideoRecyclerViewFragment();
@@ -222,9 +227,32 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
 
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
-       mLayoutManagerhashtAg = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
+
+       mLayoutManagerhashtAg = new GridLayoutManager(getActivity(),4);
+
+       mLayoutManagerhashtAg.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+            @Override
+            public int getSpanSize(int position) {
+                if (position == 3)
+                {
+                    return 1;
+                }else
+                {
+                    return 2;
+                }
+            }
+        });
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerViewHashtag.setLayoutManager(mLayoutManagerhashtAg);
+
+
+      /*  ViewTreeObserver viewTreeObserver = mRecyclerViewHashtag.getViewTreeObserver();
+        viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                calculateCellSize();
+            }
+        });*/
         SnapHelper snapHelper = new PagerSnapHelper();
         snapHelper.attachToRecyclerView(mRecyclerView);
         Bundle bundle = getArguments();
@@ -235,7 +263,10 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
         VideoRecyclerViewAdapter videoRecyclerViewAdapter = new VideoRecyclerViewAdapter(mVideoPlayerManager, getActivity(), mList);
       ArrayList<String> stringArrayList=new ArrayList<>();
         stringArrayList.add("@mycatismylife");
-        stringArrayList.add("@gear");
+        stringArrayList.add("@warbyhometryon");
+        stringArrayList.add("@warbyhometryon");
+
+
         HashtagMainPageAdapter hashtagMainPageAdapter = new HashtagMainPageAdapter(stringArrayList, new RecyclerClickListener() {
             @Override
             public void onRecyclerClick(Intent intent) {
@@ -245,11 +276,32 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
         //  mRecyclerView.setLayoutAnimation(animation);
         // mRecyclerView.getAdapter().notifyDataSetChanged();
         //  mRecyclerView.scheduleLayoutAnimation();
+        //Landing
+        //ZoomIn
+        //Wave
+        //RollIn
+        //RotateInUpLeft
+        YoYo.with(Techniques.Pulse)
+                .duration(1500)
+
+                .playOn(mRecyclerView);
         mRecyclerView.setAdapter(videoRecyclerViewAdapter);
         mRecyclerViewHashtag.setAdapter(hashtagMainPageAdapter);
 
 
 
+    }
+    private static final int sColumnWidth = 200; // assume cell width of 120dp
+    private void calculateCellSize() {
+        int spanCount = (int) Math.floor(mRecyclerView.getWidth() / convertDPToPixels(sColumnWidth));
+        mLayoutManagerhashtAg.setSpanCount(spanCount);
+        //((GridLayoutManager) mRecyclerView.getLayoutManager()).setSpanCount(spanCount);
+    }
+    private float convertDPToPixels(int dp) {
+        DisplayMetrics metrics = new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        float logicalDensity = metrics.density;
+        return dp * logicalDensity;
     }
 
     @Override

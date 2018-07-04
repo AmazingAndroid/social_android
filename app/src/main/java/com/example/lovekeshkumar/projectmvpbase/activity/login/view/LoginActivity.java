@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.ProgressBar;
 
 import com.example.lovekeshkumar.projectmvpbase.R;
-import com.example.lovekeshkumar.projectmvpbase.activity.gaming.view.GameActivity;
 import com.example.lovekeshkumar.projectmvpbase.activity.login.interactor.LoginInteractorImpl;
 import com.example.lovekeshkumar.projectmvpbase.activity.login.presenter.ILoginPresenter;
 import com.example.lovekeshkumar.projectmvpbase.activity.login.presenter.LoginPresenterImpl;
@@ -62,8 +61,8 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
 
     @Override
     public void navigateToHome() {
-        startActivity(new Intent(this, GameActivity.class));
-        finish();
+        //startActivity(new Intent(this, GameActivity.class));
+      //  finish();
     }
 
     @Override

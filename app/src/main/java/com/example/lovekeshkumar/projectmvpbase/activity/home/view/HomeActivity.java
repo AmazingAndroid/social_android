@@ -12,7 +12,6 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.lovekeshkumar.projectmvpbase.R;
-import com.example.lovekeshkumar.projectmvpbase.activity.detail.view.DetailActivity;
 import com.example.lovekeshkumar.projectmvpbase.activity.home.interactor.HomeInteractorImpl;
 import com.example.lovekeshkumar.projectmvpbase.activity.home.presenter.HomePresenterImpl;
 import com.example.lovekeshkumar.projectmvpbase.activity.home.presenter.IHomePresenter;
@@ -85,8 +84,8 @@ public class HomeActivity extends AppCompatActivity implements IHomeView ,Recycl
 
     @Override
     public void onRecyclerClick(Intent intent) {
-        intent.setClass(this, DetailActivity.class);
-        startActivity(intent);
+      //  intent.setClass(this, DetailActivity.class);
+     //   startActivity(intent);
     }
 
 //    private void hitGameDetailList() {

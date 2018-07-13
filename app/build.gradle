@@ -49,4 +49,8 @@ dependencies {
     //viedo lib
     implementation 'com.github.danylovolokh:video-player-manager:0.2.0'
     implementation 'com.github.danylovolokh:list-visibility-utils:0.2.0'
+
+    //animation
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
 }

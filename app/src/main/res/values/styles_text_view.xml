@@ -38,7 +38,8 @@
         <item name="android:paddingRight">5dp</item>
         <item name="android:maxLines">1</item>
         <item name="android:textSize">12sp</item>
-        <item name="android:textColor">@color/material_blue_A100</item>
+
+        <item name="android:textColor">@color/main_color_hashtag_taxt</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="typeface">robotoRegular</item>
 

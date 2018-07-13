@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="layoutStyleWahhao" parent="@android:style/Widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+      <!--  <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>-->
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingStart">26dp</item> -->
+        <!-- Supports API Level 17+ -->
+        <!-- <item name="android:paddingEnd">26dp</item> -->
+    </style>
+
+
+
+
+    
+	<!-- Typography style 1 -->
+    
+	<style name="layoutStyleWahhao.relativeLayouts" parent="@style/layoutStyleWahhao">
+
+
+        <item name="android:background">@color/main_color_grey_500</item>
+    </style>
+    
+	<style name="layoutStyleWahhao.LinnerLayouts" parent="@style/layoutStyleWahhao">
+        <item name="android:background">@color/main_color_grey_500</item>
+    </style>
+    
+	<style name="layoutStyleWahhao.Cardlayouts" parent="@style/layoutStyleWahhao">
+
+
+    </style>
+    
+
+</resources>

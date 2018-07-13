@@ -6,4 +6,5 @@
     <dimen name="large_size">20sp</dimen>
     <dimen name="margin_20dp">20</dimen>
     <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="width_large">100dp</dimen>
 </resources>

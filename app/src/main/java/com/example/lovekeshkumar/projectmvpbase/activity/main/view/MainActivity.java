@@ -117,31 +117,7 @@ public class MainActivity extends AppCompatActivity implements IMainView, Recycl
 
         mPager.setPageTransformer(true, new ZoomOutTransformer());
 
-      /*  mPager.setPageTransformer(false, new ViewPager.PageTransformer() {
-            @Override
-            public void transformPage(View page, float position) {
-                int pageWidth = page.getWidth();
-                int pageHeight = page.getHeight();
-                page.setPivotX(position < 0f ? pageWidth : 0f);
-                page.setPivotY(pageHeight * 0.5f);
-                page.setRotationY(90f * position);
 
-
-
-
-
-//                if (position < -1) { // [-Infinity,-1)
-//                    // This page is way off-screen to the left.
-//                    page.setAlpha(0);
-//                } else if(position <= 1){ // Page to the left, page centered, page to the right
-//                    // modify page view animations here for pages in view
-//                } else { // (1,+Infinity]
-//                    // This page is way off-screen to the right.
-//                    page.setAlpha(0);
-//                }
-            }
-        });
-*/
 
         final ActionBar actionBar = getActionBar();
         if (actionBar != null) {

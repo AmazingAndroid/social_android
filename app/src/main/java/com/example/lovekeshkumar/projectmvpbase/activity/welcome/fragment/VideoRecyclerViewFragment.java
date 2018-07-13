@@ -14,7 +14,6 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -29,7 +28,6 @@ import com.example.lovekeshkumar.projectmvpbase.adapter.HashtagMainPageAdapter;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.VideoRecyclerViewAdapter;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.items.BaseVideoItem;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.items.ItemFactory;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.IPlaceHolderView;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.SwapUpFragment;
 import com.volokh.danylo.video_player_manager.Config;
 import com.volokh.danylo.video_player_manager.manager.PlayerItemChangeListener;
@@ -53,12 +51,12 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     private static final boolean SHOW_LOGS = Config.SHOW_LOGS;
     private static final String TAG = VideoRecyclerViewFragment.class.getSimpleName();
     private RelativeLayout layout_main;
-    private  TextView textname ;
-    private  TextView swipe;
+    private TextView textname;
+    private TextView swipe;
     private final ArrayList<BaseVideoItem> mList = new ArrayList<>();
     private static final String ARG_PARAM1 = "param1";
     ProgressBar progress;
-  ;
+    ;
     /**
      * Only the one (most visible) view should be active (and playing).
      * To calculate visibility of views we use {@link SingleListViewItemActiveCalculator}
@@ -69,7 +67,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     private RecyclerView mRecyclerView;
     private RecyclerView mRecyclerViewHashtag;
     private LinearLayoutManager mLayoutManager;
-    private GridLayoutManager mLayoutManagerhashtAg;
+    private LinearLayoutManager mLayoutManagerhashtAg;
 
     public static VideoRecyclerViewFragment newInstance(int param1) {
         VideoRecyclerViewFragment fragment = new VideoRecyclerViewFragment();
@@ -159,7 +157,6 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     }
 
 
-
     @Override
     public void showProgress() {
         progress.setVisibility(View.VISIBLE);
@@ -214,7 +211,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     @Override
     public void initialization(View rootView) {
         textname = (TextView) rootView.findViewById(R.id.textname);
-         swipe = (TextView) rootView.findViewById(R.id.swipe);
+        swipe = (TextView) rootView.findViewById(R.id.swipe);
         layout_main = (RelativeLayout) rootView.findViewById(R.id.layout_main);
         layout_main.setVisibility(View.VISIBLE);
         progress = (ProgressBar) rootView.findViewById(R.id.progress);
@@ -227,21 +224,9 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
 
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
+        mLayoutManagerhashtAg = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
 
-       mLayoutManagerhashtAg = new GridLayoutManager(getActivity(),4);
 
-       mLayoutManagerhashtAg.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                if (position == 3)
-                {
-                    return 1;
-                }else
-                {
-                    return 2;
-                }
-            }
-        });
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerViewHashtag.setLayoutManager(mLayoutManagerhashtAg);
 
@@ -261,7 +246,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
 
         //LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.blink);
         VideoRecyclerViewAdapter videoRecyclerViewAdapter = new VideoRecyclerViewAdapter(mVideoPlayerManager, getActivity(), mList);
-      ArrayList<String> stringArrayList=new ArrayList<>();
+        ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("@mycatismylife");
         stringArrayList.add("@warbyhometryon");
         stringArrayList.add("@warbyhometryon");
@@ -289,14 +274,16 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
         mRecyclerViewHashtag.setAdapter(hashtagMainPageAdapter);
 
 
-
     }
+
     private static final int sColumnWidth = 200; // assume cell width of 120dp
+
     private void calculateCellSize() {
         int spanCount = (int) Math.floor(mRecyclerView.getWidth() / convertDPToPixels(sColumnWidth));
-        mLayoutManagerhashtAg.setSpanCount(spanCount);
+       // mLayoutManagerhashtAg.setSpanCount(spanCount);
         //((GridLayoutManager) mRecyclerView.getLayoutManager()).setSpanCount(spanCount);
     }
+
     private float convertDPToPixels(int dp) {
         DisplayMetrics metrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);

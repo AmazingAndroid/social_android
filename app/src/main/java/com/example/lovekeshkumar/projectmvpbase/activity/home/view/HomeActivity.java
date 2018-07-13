@@ -84,7 +84,7 @@ public class HomeActivity extends AppCompatActivity implements IHomeView ,Recycl
 
     @Override
     public void onRecyclerClick(Intent intent) {
-      //  intent.setClass(this, DetailActivity.class);
+      //  intent.setClass(this, ProfileActivity.class);
      //   startActivity(intent);
     }
 

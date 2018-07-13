@@ -14,7 +14,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-<!--==========================fontello=============================-->
+    <!--==========================fontello=============================-->
     <string name="fontello_hrt_full">&#xe800;</string>
     <string name="fontello_hrt_empty">&#xe801;</string>
     <string name="fontello_download">&#xe802;</string>
@@ -36,4 +36,11 @@
     <string name="what_a">What a handsome boy!</string>
     <string name="biscut">Biscuit wears Caspar in Pearled Tortoise</string>
     <string name="hashtag">\@warbyparker</string>
+    <string name="earn_rewards">Earn rewards and save on everything</string>
+    <string name="earn_10_points">Earn 10 points</string>
+    <string name="sharing_content">Sharing content</string>
+    <string name="reviewing_product">Reviewing product</string>
+    <string name="complete_purchase">Complete a purchase</string>
+    <string name="today_only">Today only</string>
+    <string name="when_you_buy">When you buy anything from @harrys</string>
 </resources>

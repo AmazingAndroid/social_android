@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_theam_color"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            style="@style/TextViewAppearance.Headline3"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="10"
+            android:maxLines="2"
+            android:text="@string/earn_rewards"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100_percent"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_hashtag"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            style="@style/TextViewAppearance.Body2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/earn_10_points"
+            android:textAllCaps="true"
+            android:textColor="@color/white_50_percent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"></RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="@dimen/margin_5dp"
+                android:orientation="vertical">
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/sharing_content"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/reviewing_product"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@drawable/rounded_hashtag"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            style="@style/TextViewAppearance.Body2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/earn_10_points"
+            android:textAllCaps="true"
+            android:textColor="@color/white_50_percent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"></RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/sharing_content"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/reviewing_product"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/complete_purchase"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:background="@drawable/rounded_hashtag"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            style="@style/TextViewAppearance.Body2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/earn_10_points"
+            android:textAllCaps="true"
+            android:textColor="@color/white_50_percent"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"></RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:gravity="center|left"
+                android:orientation="vertical">
+
+                <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                    style="@style/TextViewAppearance.Caption1"
+
+                    android:layout_alignParentTop="true"
+
+                    android:ellipsize="end"
+
+                    android:maxLines="1"
+                    android:text="@string/complete_purchase"
+
+                    android:textColor="@color/white_30_percent"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

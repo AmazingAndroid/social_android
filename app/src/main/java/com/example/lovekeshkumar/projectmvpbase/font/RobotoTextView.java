@@ -33,10 +33,10 @@ public class RobotoTextView extends AppCompatTextView {
 	private void parseAttributes(AttributeSet attrs) {
 		int typeface;
 		if (attrs == null) { //Not created from xml
-			typeface = Roboto.ROBOTO_REGULAR;
+			typeface = Roboto.MONTSERRAT_MEDIUM;
 		} else {
 		    TypedArray values = getContext().obtainStyledAttributes(attrs, R.styleable.RobotoTextView);
-		    typeface = values.getInt(R.styleable.RobotoTextView_typeface, Roboto.ROBOTO_REGULAR);
+		    typeface = values.getInt(R.styleable.RobotoTextView_typeface, Roboto.MONTSERRAT_MEDIUM);
 		    values.recycle();
 		}
 	    setTypeface(getRoboto(typeface));
@@ -132,6 +132,13 @@ public class RobotoTextView extends AppCompatTextView {
 			if (Roboto.sRobotoThinItalic == null) {
 				Roboto.sRobotoThinItalic = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-ThinItalic.ttf");
 			}
+
+		case Roboto.MONTSERRAT_MEDIUM:
+			if (Roboto.sMontserratMmedium == null) {
+				Roboto.sMontserratMmedium = Typeface.createFromAsset(context.getAssets(), "fonts/Montserrat-Medium.ttf");
+			}
+
+
 			return Roboto.sRobotoThinItalic;
 		}
 	}
@@ -171,6 +178,7 @@ public class RobotoTextView extends AppCompatTextView {
 		public static final int ROBOTO_REGULAR = 13;
 		public static final int ROBOTO_THIN = 14;
 		public static final int ROBOTO_THIN_ITALIC = 15;
+		public static final int MONTSERRAT_MEDIUM = 16;
 
 		private static Typeface sRobotoBlack;
 		private static Typeface sRobotoBlackItalic;
@@ -188,5 +196,6 @@ public class RobotoTextView extends AppCompatTextView {
 		private static Typeface sRobotoRegular;
 		private static Typeface sRobotoThin;
 		private static Typeface sRobotoThinItalic;
+		private static Typeface sMontserratMmedium;
 	}
 }

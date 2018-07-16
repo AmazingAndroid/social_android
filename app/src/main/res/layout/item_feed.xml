@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/item_back"
         app:cardCornerRadius="@dimen/padding"
+        android:layout_marginTop="25dp"
         >
     <LinearLayout
         android:orientation="vertical"
@@ -120,4 +121,19 @@
         </RelativeLayout>
     </LinearLayout>
     </android.support.v7.widget.CardView>
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/paddingL"
+        >
+        <include layout="@layout/custom_rounded_image"></include>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="@dimen/paddingL"
+        android:layout_alignParentRight="true"
+        >
+        <include layout="@layout/custom_rounded_image"></include>
+    </RelativeLayout>
 </RelativeLayout>

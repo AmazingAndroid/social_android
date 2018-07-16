@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -43,14 +44,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/swipe"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
             >
-
             <include layout="@layout/main_bottom_layout"/>
         </RelativeLayout>
 
 
-        <TextView
+       <!-- <TextView
             android:id="@+id/swipe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +61,7 @@
             android:layout_marginBottom="20dp"
             android:padding="5dp"
             android:text="Swipe to top"
-            android:textSize="20sp" />
+            android:textSize="20sp" />-->
     </RelativeLayout>
 
     <RelativeLayout
@@ -70,3 +72,4 @@
 
     </RelativeLayout>
 </RelativeLayout>
+    <!-- SLIDING LAYOUT -->

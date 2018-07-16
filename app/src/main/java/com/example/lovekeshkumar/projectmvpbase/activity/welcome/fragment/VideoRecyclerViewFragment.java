@@ -4,8 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.PagerSnapHelper;
 import android.support.v7.widget.RecyclerView;
@@ -14,12 +12,12 @@ import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewTreeObserver;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
@@ -29,8 +27,6 @@ import com.example.lovekeshkumar.projectmvpbase.adapter.HashtagMainPageAdapter;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.VideoRecyclerViewAdapter;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.items.BaseVideoItem;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.video_list_demo.adapter.items.ItemFactory;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.IPlaceHolderView;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.SwapUpFragment;
 import com.volokh.danylo.video_player_manager.Config;
 import com.volokh.danylo.video_player_manager.manager.PlayerItemChangeListener;
 import com.volokh.danylo.video_player_manager.manager.SingleVideoPlayerManager;
@@ -53,12 +49,12 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     private static final boolean SHOW_LOGS = Config.SHOW_LOGS;
     private static final String TAG = VideoRecyclerViewFragment.class.getSimpleName();
     private RelativeLayout layout_main;
-    private  TextView textname ;
-    private  TextView swipe;
-    private final ArrayList<BaseVideoItem> mList = new ArrayList<>();
+    private TextView textname;
+    //private TextView swipe;
+     private final ArrayList<BaseVideoItem> mList = new ArrayList<>();
     private static final String ARG_PARAM1 = "param1";
     ProgressBar progress;
-  ;
+   ;
     /**
      * Only the one (most visible) view should be active (and playing).
      * To calculate visibility of views we use {@link SingleListViewItemActiveCalculator}
@@ -69,13 +65,12 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     private RecyclerView mRecyclerView;
     private RecyclerView mRecyclerViewHashtag;
     private LinearLayoutManager mLayoutManager;
-    private GridLayoutManager mLayoutManagerhashtAg;
-
+    private LinearLayoutManager mLayoutManagerhashtAg;
+    Bundle savedInstanceState;
     public static VideoRecyclerViewFragment newInstance(int param1) {
         VideoRecyclerViewFragment fragment = new VideoRecyclerViewFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_PARAM1, param1);
-
         fragment.setArguments(args);
         return fragment;
     }
@@ -101,7 +96,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        this.savedInstanceState=savedInstanceState;
     }
 
     @Override
@@ -119,7 +114,6 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
         }
 
         View rootView = inflater.inflate(R.layout.fragment_video_recycler_view, container, false);
-
         initialization(rootView);
         setListeners();
 
@@ -157,7 +151,6 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     public void onRecyclerClick(Intent intent) {
 
     }
-
 
 
     @Override
@@ -199,22 +192,22 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
         });
         mItemsPositionGetter = new RecyclerViewItemPositionGetter(mLayoutManager, mRecyclerView);
 
-
-        swipe.setOnClickListener(new View.OnClickListener() {
+       /* swipe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getActivity().getSupportFragmentManager();
                 SwapUpFragment fragment = new SwapUpFragment();
                 fm.beginTransaction().add(R.id.layout_container, fragment).commit();
             }
-        });
+        });*/
 
     }
 
     @Override
     public void initialization(View rootView) {
         textname = (TextView) rootView.findViewById(R.id.textname);
-         swipe = (TextView) rootView.findViewById(R.id.swipe);
+         //layout_main = (FrameLayout) rootView.findViewById(R.id.main_container);
+        //swipe = (TextView) rootView.findViewById(R.id.swipe);
         layout_main = (RelativeLayout) rootView.findViewById(R.id.layout_main);
         layout_main.setVisibility(View.VISIBLE);
         progress = (ProgressBar) rootView.findViewById(R.id.progress);
@@ -227,25 +220,13 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
 
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
+        mLayoutManagerhashtAg = new LinearLayoutManager(getActivity(), LinearLayout.HORIZONTAL, false);
 
-       mLayoutManagerhashtAg = new GridLayoutManager(getActivity(),4);
 
-       mLayoutManagerhashtAg.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-            @Override
-            public int getSpanSize(int position) {
-                if (position == 3)
-                {
-                    return 1;
-                }else
-                {
-                    return 2;
-                }
-            }
-        });
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerViewHashtag.setLayoutManager(mLayoutManagerhashtAg);
 
-
+       // mLayout.setAnchorPoint(0.6f);
       /*  ViewTreeObserver viewTreeObserver = mRecyclerViewHashtag.getViewTreeObserver();
         viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -261,7 +242,7 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
 
         //LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.blink);
         VideoRecyclerViewAdapter videoRecyclerViewAdapter = new VideoRecyclerViewAdapter(mVideoPlayerManager, getActivity(), mList);
-      ArrayList<String> stringArrayList=new ArrayList<>();
+        ArrayList<String> stringArrayList = new ArrayList<>();
         stringArrayList.add("@mycatismylife");
         stringArrayList.add("@warbyhometryon");
         stringArrayList.add("@warbyhometryon");
@@ -286,16 +267,16 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
                 .playOn(mRecyclerView);
         mRecyclerView.setAdapter(videoRecyclerViewAdapter);
         mRecyclerViewHashtag.setAdapter(hashtagMainPageAdapter);
+}
 
-
-
-    }
     private static final int sColumnWidth = 200; // assume cell width of 120dp
+
     private void calculateCellSize() {
         int spanCount = (int) Math.floor(mRecyclerView.getWidth() / convertDPToPixels(sColumnWidth));
-        mLayoutManagerhashtAg.setSpanCount(spanCount);
+        // mLayoutManagerhashtAg.setSpanCount(spanCount);
         //((GridLayoutManager) mRecyclerView.getLayoutManager()).setSpanCount(spanCount);
     }
+
     private float convertDPToPixels(int dp) {
         DisplayMetrics metrics = new DisplayMetrics();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
@@ -312,4 +293,5 @@ public class VideoRecyclerViewFragment extends Fragment implements IVideoRecycle
     public void showErrorMessage(Throwable error) {
 
     }
+
 }

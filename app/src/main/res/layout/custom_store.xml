@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@color/profile_theam_color"
+    app:cardCornerRadius="@dimen/margin_10dp">
+
+    <RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/main">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/frame"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:layout_toLeftOf="@+id/timeinterval"
+                android:layout_toStartOf="@+id/timeinterval"
+                android:text="@string/fontello_hrt_full"
+                android:textColor="@color/white_15_percent"
+                android:textSize="20sp" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/timeinterval"
+                style="@style/TextViewAppearance.Caption1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="00:05:23"
+                android:textColor="@color/white_15_percent" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="bottom">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="@string/fontello_hrt_full"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/upload1"
+                android:layout_marginLeft="@dimen/margin_15dp"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="@string/fontello_hrt_full"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_launcher" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/frame"
+        android:background="@color/profile_theam_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/hashtag_name"
+                style="@style/TextViewAppearance.Caption1.1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="warbyparker"
+                android:textStyle="bold"
+                android:textColor="@color/hashtag_color" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/cat_name"
+                style="@style/TextViewAppearance.Caption1.1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textAllCaps="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="coley"
+                android:textColor="@color/white_100_percent" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/hashtag_type"
+                style="@style/TextViewAppearance.Caption1.1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="crystal"
+                android:textAllCaps="true"
+                android:textColor="@color/hashtag_color" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/hashtag_price"
+                style="@style/TextViewAppearance.Caption1.1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/margin_15dp"
+                android:text="$95  $92.99"
+                android:textAllCaps="true"
+                android:textColor="@color/white_100_percent" />
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/fontello_hrt_full"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

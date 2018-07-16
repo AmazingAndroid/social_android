@@ -106,7 +106,7 @@ public class AudioActivity extends AppCompatActivity implements IAudioView  {
      //   progress = (ProgressBar) findViewById(R.id.progress);
      //   showProgress();
        // utility = Utility.getInstance(getApplicationContext());
-       // homePresenter = new AudioPresenterImpl(this,new AudioInteractorImpl(),utility);
+       // homePresenter = new AudioPresenterImpl(this,new ProfileInteractorImpl(),utility);
     }
 
 //    @Override

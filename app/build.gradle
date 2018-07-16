@@ -53,4 +53,14 @@ dependencies {
     //animation
     implementation 'com.daimajia.easing:library:2.0@aar'
     implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    // ============alert lib==========
+    implementation 'cn.pedant.sweetalert:library:1.3'
+
+    //scalable video view
+    implementation 'com.yqritc:android-scalablevideoview:1.0.4'
+
+    //butter knife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 }

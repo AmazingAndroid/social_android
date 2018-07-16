@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_background_color"
+    android:orientation="vertical"
+    tools:context=".activity.profile.fragment.ProfileFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+            style="@style/TextViewAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/fontello_chat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+            style="@style/TextViewAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="@string/fontello_chat"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/margin_10dp"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@color/profile_theam_color">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:background="@color/profile_theam_color"
+                        android:gravity="center">
+
+                        <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:text="@string/fontello_hrt_full"
+                            android:textColor="@color/tabseletced_color"
+                            android:textSize="100sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="@color/profile_theam_color">
+
+                        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                            android:id="@+id/text_hashtag_name"
+                            style="@style/TextViewAppearance.Caption1.1"
+                            android:layout_gravity="left|center"
+                            android:gravity="left|center"
+                            android:text="@string/hashtag"
+                            android:textColor="@color/white_100_percent" />
+
+                        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                            android:id="@+id/text_line_two"
+                            style="@style/TextViewAppearance.Caption1.1"
+                            android:layout_below="@+id/text_hashtag_name"
+                            android:ellipsize="end"
+                            android:gravity="left"
+                            android:maxEms="25"
+                            android:maxLines="1"
+                            android:text="@string/biscut"
+                            android:textColor="@color/white_100_percent" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyle_view3"
+                            style="@style/RecyclerViewStyle"
+                            android:layout_below="@+id/text_line_two" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/profile_theam_color"
+                    android:orientation="horizontal">
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                        android:id="@+id/text_rating_text"
+                        style="@style/TextViewAppearance.Body1"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxEms="15"
+                        android:maxLines="2"
+                        android:text="4.8"
+                        android:textColor="@color/white_100_percent"
+                        android:textStyle="bold" />
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/text_rating_text"
+                        android:layout_toRightOf="@+id/text_rating_text"
+                        android:gravity="left|center"
+                        android:text="@string/fontello_hrt_full"
+                        android:textColor="@color/tabseletced_color"
+                        android:textSize="22sp" />
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                        android:id="@+id/text_follower_count"
+                        style="@style/TextViewAppearance.Caption1"
+
+
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:ellipsize="end"
+                        android:gravity="left|center"
+                        android:maxEms="15"
+                        android:maxLines="2"
+                        android:text="427k Followers"
+                        android:textColor="@color/white_100_percent"
+                        android:textStyle="bold" />
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                        android:id="@+id/chat_massage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+
+                        android:layout_marginRight="15dp"
+
+                        android:layout_toLeftOf="@+id/upload_vid"
+                        android:gravity="right|center"
+                        android:text="@string/fontello_chat"
+                        android:textColor="@color/tabseletced_color"
+                        android:textSize="22sp" />
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+                        android:id="@+id/upload_vid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:gravity="right|center"
+                        android:text="@string/fontello_upload"
+                        android:textColor="@color/material_yellow_100"
+                        android:textSize="22sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/margin_10dp"
+            android:layout_margin="@dimen/margin_5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabanim_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabBackground="@color/profile_theam_color"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabSelectedTextColor="@color/tabseletced_color"
+                    app:tabTextColor="@color/white_30_percent" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/tabanim_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

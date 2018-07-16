@@ -44,8 +44,14 @@
     <string name="today_only">Today only</string>
     <string name="when_you_buy">When you buy anything from @harrys</string>
 
+    <string name="store">Store</string>
+    <string name="group_buy">Group Buy</string>
+    <string name="explore">Explore</string>
+
+
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
     <string name="search_hint">Search</string>
     <string name="feed_text">What\'s cookin\' good lookin\' ?</string>
+
 
 </resources>

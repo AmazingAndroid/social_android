@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/profile_background_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/margin_10dp"
+
+    tools:context=".activity.store.view.StoreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/margin_10dp"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/custom_rounded_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"></include>
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            style="@style/TextViewAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/store"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100_percent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <com.example.lovekeshkumar.projectmvpbase.font.FontelloTextView
+            style="@style/TextViewAppearance.Caption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:text="@string/fontello_search"
+            android:textColor="@color/white_100_percent"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_10dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tabseletced_color"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+
+
+                    android:id="@+id/layout_group_buy"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_blue_left_store"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                        android:id="@+id/txt_login_with_mobile"
+                        style="@style/TextViewAppearance.Caption1"
+                        android:text="@string/group_buy"
+                        android:textAllCaps="true"
+                        android:textColor="@color/profile_background_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_explore"
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_white_right_store"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                        android:id="@+id/txt_login_with_email"
+                        style="@style/TextViewAppearance.Caption1"
+
+                        android:text="@string/explore"
+                        android:textAllCaps="true"
+                        android:textColor="@color/tabseletced_color"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <include layout="@layout/custom_tab_layout"></include>
+</LinearLayout>

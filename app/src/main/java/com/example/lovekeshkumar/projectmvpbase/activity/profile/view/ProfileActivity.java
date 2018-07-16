@@ -15,6 +15,7 @@ import com.example.lovekeshkumar.projectmvpbase.activity.detail.presenter.Detail
 import com.example.lovekeshkumar.projectmvpbase.activity.detail.presenter.IDetailPresenter;
 import com.example.lovekeshkumar.projectmvpbase.activity.detail.view.IDetailView;
 import com.example.lovekeshkumar.projectmvpbase.activity.profile.fragment.ProfileFragment;
+import com.example.lovekeshkumar.projectmvpbase.activity.store.view.StoreFragment;
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoRecyclerViewFragment;
 import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
 import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
@@ -50,7 +51,9 @@ TextView name,api,version;
 
     @Override
     public void bindData() {
-        replaceFragment(ChatShareMainFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
+        replaceFragment(StoreFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
+
+       // replaceFragment(ChatShareMainFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
       //  replaceFragment(ProfileFragment.newInstance(Constant.FragmentTag.LOGIN_FRAGMENT_TAG,Constant.FragmentTag.LOGIN_FRAGMENT_TAG), R.id.container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
     }
 

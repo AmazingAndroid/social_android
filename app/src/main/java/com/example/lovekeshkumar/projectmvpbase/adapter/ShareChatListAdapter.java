@@ -28,7 +28,6 @@ public class ShareChatListAdapter extends RecyclerView.Adapter<ShareChatListAdap
 
     public ShareChatListAdapter(List<ChatShareDataResponse> listResponses) {
         this.listResponses = listResponses;
-
         this.context = context;
         utility = Utility.getInstance(context);
     }

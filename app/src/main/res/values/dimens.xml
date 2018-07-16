@@ -6,6 +6,16 @@
     <dimen name="large_size">20sp</dimen>
     <dimen name="margin_20dp">20</dimen>
     <dimen name="margin_15dp">15dp</dimen>
+
+    <dimen name="paddingL">15dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="paddingS">5dp</dimen>
+    <dimen name="textXS">8sp</dimen>
+    <dimen name="textNS">10sp</dimen>
+    <dimen name="texts">10sp</dimen>
+    <dimen name="textm">13sp</dimen>
+    <dimen name="textl">15sp</dimen>
+    <dimen name="textxl">20sp</dimen>
     <dimen name="width_large">100dp</dimen>
     <dimen name="margin_4dp">4dp</dimen>
 </resources>

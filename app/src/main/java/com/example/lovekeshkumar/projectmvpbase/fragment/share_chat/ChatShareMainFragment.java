@@ -63,6 +63,8 @@ public class ChatShareMainFragment extends Fragment {
 
         final ViewPager viewPager = (ViewPager) view.findViewById(R.id.tabanim_viewpager);
         setupViewPager(viewPager);
+
+       // Blurry.with(getActivity()).radius(25).sampling(2).onto((ViewGroup) view);
         TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabanim_tabs);
         tabLayout.setupWithViewPager(viewPager);
 

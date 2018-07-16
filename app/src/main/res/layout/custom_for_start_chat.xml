@@ -49,7 +49,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_gravity="right|center"
-                android:button="@drawable/selector_favorit" />
+                android:button="@drawable/selector_favorit1" />
         </RelativeLayout>
 
 

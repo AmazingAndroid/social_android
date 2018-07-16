@@ -59,4 +59,7 @@ dependencies {
 
     //scalable video view
     implementation 'com.yqritc:android-scalablevideoview:1.0.4'
+
+    //=============Blur effect=================
+    implementation 'jp.wasabeef:blurry:2.1.1'
 }

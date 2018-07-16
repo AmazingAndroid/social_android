@@ -102,6 +102,7 @@
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginRight="@dimen/margin_15dp"
+                android:textSize="10sp"
                 android:text="warbyparker"
                 android:textStyle="bold"
                 android:textColor="@color/hashtag_color" />

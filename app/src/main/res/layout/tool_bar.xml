@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:gravity="center"
-
+android:background="@color/profile_theam_color"
     android:minHeight="?attr/actionBarSize"
     android:paddingLeft="@dimen/margin_10dp"
     android:textAlignment="center"

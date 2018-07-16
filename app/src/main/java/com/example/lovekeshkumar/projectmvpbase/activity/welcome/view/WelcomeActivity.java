@@ -30,12 +30,14 @@ import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoR
 import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
 import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
 
+
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentOne;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentThree;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentTwo;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.FragmentOne;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.SwapUpFragment;
 import com.example.lovekeshkumar.projectmvpbase.utility.FragmentHistory;
+import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view.ChatShareFragment;
+
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
 
@@ -105,6 +107,7 @@ public class WelcomeActivity extends BaseActivity implements  RecyclerClickListe
     @Override
     public void bindData() {
         replaceFragment(VideoRecyclerViewFragment.newInstance(1), R.id.main_container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
+
        // iGamePresenter = new GamePresenterImpl(this, new GameInteractorImpl(), utility);
     }
 

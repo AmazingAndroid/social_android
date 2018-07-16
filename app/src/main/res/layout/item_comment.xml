@@ -5,7 +5,7 @@
     android:layout_marginTop="@dimen/texts"
     android:layout_height="wrap_content">
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white_new"
@@ -206,5 +206,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
+-->
 </android.support.design.widget.CoordinatorLayout>

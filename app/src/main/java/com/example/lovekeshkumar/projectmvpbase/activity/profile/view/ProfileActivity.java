@@ -18,6 +18,8 @@ import com.example.lovekeshkumar.projectmvpbase.activity.profile.fragment.Profil
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoRecyclerViewFragment;
 import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
 import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.ChatShareMainFragment;
+import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view.ChatShareFragment;
 
 public class ProfileActivity extends BaseActivity implements IDetailView {
 
@@ -48,7 +50,8 @@ TextView name,api,version;
 
     @Override
     public void bindData() {
-        replaceFragment(ProfileFragment.newInstance(Constant.FragmentTag.LOGIN_FRAGMENT_TAG,Constant.FragmentTag.LOGIN_FRAGMENT_TAG), R.id.container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
+        replaceFragment(ChatShareMainFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
+      //  replaceFragment(ProfileFragment.newInstance(Constant.FragmentTag.LOGIN_FRAGMENT_TAG,Constant.FragmentTag.LOGIN_FRAGMENT_TAG), R.id.container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
     }
 
     @Override

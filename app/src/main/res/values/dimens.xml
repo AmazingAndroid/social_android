@@ -16,7 +16,5 @@
     <dimen name="textm">13sp</dimen>
     <dimen name="textl">15sp</dimen>
     <dimen name="textxl">20sp</dimen>
-
-
-
+    <dimen name="width_large">100dp</dimen>
 </resources>

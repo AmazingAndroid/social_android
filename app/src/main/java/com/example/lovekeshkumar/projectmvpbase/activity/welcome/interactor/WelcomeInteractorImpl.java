@@ -2,7 +2,7 @@ package com.example.lovekeshkumar.projectmvpbase.activity.welcome.interactor;
 
 import com.example.lovekeshkumar.projectmvpbase.activity.gaming.interactor.IGameInteractor;
 import com.example.lovekeshkumar.projectmvpbase.activity.gaming.presenter.GamePresenterImpl;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.model.Constant;
 import com.example.lovekeshkumar.projectmvpbase.model.ProfilesRequest;
 import com.example.lovekeshkumar.projectmvpbase.network.NetworkManager;
 

@@ -142,7 +142,7 @@
 
         </activity>
         <activity
-            android:name=".activity.profile.view.ProfileActivity"
+            android:name=".activity.brand_profile.view.ProfileActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

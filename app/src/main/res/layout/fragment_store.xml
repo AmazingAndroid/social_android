@@ -127,5 +127,5 @@
 
 
     </LinearLayout>
-    <include layout="@layout/custom_tab_layout"></include>
+    <include layout="@layout/custom_tab_layout_with_indicator"></include>
 </LinearLayout>

@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+
+    <include layout="@layout/custom_tab_layout_with_indicator"></include>
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -27,6 +29,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
-    </LinearLayout>
+    </LinearLayout>-->
 
 </android.support.design.widget.CoordinatorLayout>

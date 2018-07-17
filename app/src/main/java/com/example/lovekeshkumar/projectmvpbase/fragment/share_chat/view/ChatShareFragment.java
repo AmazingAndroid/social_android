@@ -2,10 +2,8 @@ package com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,15 +11,10 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 
 import com.example.lovekeshkumar.projectmvpbase.R;
-import com.example.lovekeshkumar.projectmvpbase.activity.gaming.interactor.GameInteractorImpl;
-import com.example.lovekeshkumar.projectmvpbase.activity.gaming.presenter.GamePresenterImpl;
-import com.example.lovekeshkumar.projectmvpbase.activity.listener.RecyclerClickListener;
-import com.example.lovekeshkumar.projectmvpbase.adapter.GameListAdapter;
 import com.example.lovekeshkumar.projectmvpbase.adapter.ShareChatListAdapter;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.model.Constant;
 import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.presenter.ShareChatPresenterImpl;
 import com.example.lovekeshkumar.projectmvpbase.model.ChatShareDataResponse;
-import com.example.lovekeshkumar.projectmvpbase.model.GameModel;
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;
 
 import java.util.ArrayList;

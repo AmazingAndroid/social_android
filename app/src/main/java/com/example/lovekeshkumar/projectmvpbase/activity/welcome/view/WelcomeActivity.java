@@ -11,10 +11,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -28,15 +26,14 @@ import com.example.lovekeshkumar.projectmvpbase.activity.listener.RecyclerClickL
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoRecyclerViewFragment;
 
 import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.model.Constant;
 
 
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentOne;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentThree;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentTwo;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.FragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentThree;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentTwo;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.FragmentOne;
 import com.example.lovekeshkumar.projectmvpbase.utility.FragmentHistory;
-import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view.ChatShareFragment;
 
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;

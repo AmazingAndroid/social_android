@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.example.lovekeshkumar.projectmvpbase.R;
-import com.example.lovekeshkumar.projectmvpbase.activity.profile.adapter.ViewPagerAdapter;
+import com.example.lovekeshkumar.projectmvpbase.activity.brand_profile.adapter.ViewPagerAdapter;
 import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view.ChatShareFragment;
 
 
@@ -34,7 +34,7 @@ public class ChatShareMainFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProfileFragment.
+     * @return A new instance of fragment BrandProfileFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static ChatShareMainFragment newInstance(String param1, String param2) {

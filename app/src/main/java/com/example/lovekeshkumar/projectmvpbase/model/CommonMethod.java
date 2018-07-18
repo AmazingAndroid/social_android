@@ -886,6 +886,55 @@ public class CommonMethod  {
 
     }
 
+
+
+    public static List<Feed> getFeedList(){
+        List<Feed> list=new ArrayList<>();
+        List<String> urls=new ArrayList<>();
+        urls.add("http://pengaja.com/uiapptemplate/avatars/1.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/2.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/3.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/4.jpg");
+
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",0,"http://pengaja.com/uiapptemplate/avatars/0.jpg","",null));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",1,"","http://res.cloudinary.com/krupen/video/upload/w_300,h_150,c_crop,q_70/v1491561340/hello_cuwgcb.mp4",null));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",2,"","",urls));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",0,"http://pengaja.com/uiapptemplate/avatars/5.jpg","",null));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",2,"","",urls));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",0,"http://pengaja.com/uiapptemplate/avatars/6.jpg","",null));
+        list.add(new Feed("Isaac Reid","@golfdad just reached the Gold Status and became he tribe leader of #DadJokesTribe#",1,"","http://res.cloudinary.com/krupen/video/upload/w_300,h_150,c_crop,q_70/v1481795675/1_pyn1fm.mp4",null));
+
+        return list;
+    }
+
+    public static List<String> getStoryList(){
+        List<String> urls=new ArrayList<>();
+        urls.add("http://pengaja.com/uiapptemplate/avatars/1.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/2.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/3.jpg");
+        urls.add("http://pengaja.com/uiapptemplate/avatars/4.jpg");
+        return urls;
+    }
+
+
+    public static List<Comments> getCommentList(){
+        List<Comments> urls=new ArrayList<>();
+        List<Comments> replies=new ArrayList<>();
+        replies.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/9.jpg","5",null));
+        replies.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/8.jpg","5",null));
+        replies.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/7.jpg","5",null));
+
+        urls.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/1.jpg","5",replies));
+        urls.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/2.jpg","5",replies));
+        urls.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/3.jpg","5",replies));
+        urls.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/4.jpg","5",replies));
+        urls.add(new Comments("Isaac Reid","This has to be one of your coolest adventure in a while","5 min ago","http://pengaja.com/uiapptemplate/avatars/5.jpg","5",replies));
+
+        return urls;
+    }
+
+
+
     //Google Aanalytics
 
 

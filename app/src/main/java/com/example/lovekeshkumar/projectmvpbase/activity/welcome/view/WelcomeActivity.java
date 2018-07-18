@@ -11,10 +11,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -31,12 +29,11 @@ import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
 import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
 
 
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.demofeed.feed.view.FeedFragment;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentThree;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentTwo;
 import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.FragmentOne;
 import com.example.lovekeshkumar.projectmvpbase.utility.FragmentHistory;
-import com.example.lovekeshkumar.projectmvpbase.fragment.share_chat.view.ChatShareFragment;
 
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;
 import com.sothree.slidinguppanel.SlidingUpPanelLayout;
@@ -114,6 +111,7 @@ public class WelcomeActivity extends BaseActivity implements  RecyclerClickListe
     @Override
     public void setListeners() {
         layout_main=(FrameLayout)findViewById(R.id.main_container);
+        mLayout.setAnchorPoint(0.7f);
         mLayout.addPanelSlideListener(new SlidingUpPanelLayout.PanelSlideListener() {
             @Override
             public void onPanelSlide(View panel, float slideOffset) {
@@ -189,7 +187,7 @@ public class WelcomeActivity extends BaseActivity implements  RecyclerClickListe
                 replaceFragment(VideoRecyclerViewFragment.newInstance(1), R.id.main_container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
                 break;
             case 1:
-                replaceFragment(BlankFragmentOne.newInstance("",""), R.id.main_container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
+                replaceFragment(FeedFragment.newInstance(), R.id.main_container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
                 break;
             case 2:
                 replaceFragment(BlankFragmentTwo.newInstance("","1"), R.id.main_container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);

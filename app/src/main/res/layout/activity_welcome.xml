@@ -28,7 +28,6 @@
     android:layout_height="match_parent"
     android:background="@android:color/transparent"
     android:orientation="vertical"
-    android:layout_marginTop="150dp"
     android:clickable="true"
     android:focusable="false"
     android:id="@+id/dragView">

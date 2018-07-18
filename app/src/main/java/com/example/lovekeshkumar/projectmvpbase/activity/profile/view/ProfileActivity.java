@@ -51,9 +51,9 @@ TextView name,api,version;
 
     @Override
     public void bindData() {
-        replaceFragment(StoreFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
+       // replaceFragment(StoreFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
 
-       // replaceFragment(ChatShareMainFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
+        replaceFragment(ChatShareMainFragment.newInstance("ss","ss"), R.id.container, Constant.FragmentTag.CHATSHARE_FRAGMENT_TAG);
       //  replaceFragment(ProfileFragment.newInstance(Constant.FragmentTag.LOGIN_FRAGMENT_TAG,Constant.FragmentTag.LOGIN_FRAGMENT_TAG), R.id.container, Constant.FragmentTag.LOGIN_FRAGMENT_TAG);
     }
 

@@ -5,10 +5,10 @@
     android:layout_marginTop="@dimen/texts"
     android:layout_height="wrap_content">
 
-    <!--<LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white_new"
+        android:background="@color/theme_background"
         android:orientation="vertical"
         android:paddingBottom="@dimen/textm"
         >
@@ -19,15 +19,11 @@
             android:paddingTop="@dimen/textm"
             android:paddingLeft="@dimen/textm"
             android:layout_height="wrap_content">
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/img_comment_thumb"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="0dp" />
 
+            <include layout="@layout/custom_rounded_image"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                ></include>
 
             <LinearLayout
                 android:layout_marginLeft="10dp"
@@ -38,123 +34,74 @@
 
                 <TextView
 
-                    fontPath="fonts/medium.otf"
                     android:layout_centerInParent="true"
                     android:text="#ionlyhave5bucks"
-                    android:textColor="@color/black"
-                    android:id="@+id/txt_feed_title"
+                    android:textColor="@color/white"
+                    android:id="@+id/comment_title"
                     android:layout_width="match_parent"
                     android:textSize="15sp"
                     android:layout_height="wrap_content" />
                 <TextView
-                    fontPath="fonts/regular.otf"
                     android:layout_centerInParent="true"
                     android:text="2 mins ago"
-                    android:textColor="@color/new_light_grey"
-                    android:id="@+id/txt_feed_time"
+                    android:textColor="@color/white"
+                    android:id="@+id/comment_time"
                     android:layout_width="match_parent"
                     android:textSize="11sp"
-
                     android:layout_height="wrap_content" />
             </LinearLayout>
 
 
             <TextView
-                android:visibility="gone"
                 android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/like"
-                android:background="@drawable/rectangle_shape_grey"
                 android:padding="@dimen/texts"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="@dimen/textm"
-                fontPath="fonts/regular.otf"
                 android:layout_centerInParent="true"
-                android:textColor="@color/new_light_grey"
-                android:id="@+id/txt_like_count"
+                android:textColor="@color/white"
+                android:id="@+id/like_count"
                 android:layout_width="wrap_content"
                 android:textSize="12sp"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <TextView
-            fontPath="fonts/regular.otf"
-            android:layout_centerInParent="true"
+             android:layout_centerInParent="true"
             android:text=""
             android:layout_marginLeft="60dp"
             android:textSize="15sp"
-            android:textColor="@color/gray"
-            android:id="@+id/txt_des"
+            android:textColor="@color/white"
+            android:id="@+id/comment_des"
+            android:paddingLeft="@dimen/padding"
+            android:paddingBottom="@dimen/paddingS"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
-
-        <LinearLayout
-            android:visibility="gone"
-            android:gravity="center_vertical"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginBottom="@dimen/texts"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/like"
-                android:layout_marginLeft="10dp"
-                fontPath="fonts/regular.otf"
-                android:layout_centerInParent="true"
-                android:textColor="@color/new_light_grey"
-                android:id="@+id/txt_fav_count"
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/comments"
-                android:layout_marginLeft="10dp"
-                fontPath="fonts/regular.otf"
-                android:layout_centerInParent="true"
-
-                android:textColor="@color/new_light_grey"
-                android:id="@+id/txt_comment_count"
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:visibility="gone"
-                android:drawablePadding="10dp"
-                android:drawableLeft="@drawable/share"
-                android:layout_marginLeft="10dp"
-                fontPath="fonts/regular.otf"
-                android:layout_centerInParent="true"
-
-                android:textColor="@color/new_light_grey"
-                android:id="@+id/txt_share_count"
-                android:layout_width="wrap_content"
-                android:textSize="12sp"
-
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="Reply"
+            android:layout_marginLeft="60dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/reply"
+            android:padding="@dimen/padding"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/replyLayout"
-            android:visibility="gone"
             android:orientation="vertical"
+            android:layout_marginLeft="@dimen/paddingL"
             >
 
         <TextView
-            fontPath="fonts/regular.otf"
             android:layout_centerInParent="true"
             android:text="View more replies..."
             android:layout_marginLeft="40dp"
-            android:paddingLeft="5dp"
+            android:paddingLeft="15dp"
             android:textSize="15sp"
-            android:textColor="@color/gray"
+            android:textColor="@color/white"
             android:id="@+id/txt_more_replies"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
@@ -163,7 +110,9 @@
             android:layout_marginLeft="40dp"
             android:paddingLeft="@dimen/texts"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_replies"
+            >
 
         </android.support.v7.widget.RecyclerView>
         </LinearLayout>
@@ -171,20 +120,14 @@
             android:layout_width="match_parent"
             android:layout_marginLeft="40dp"
             android:layout_height="50dp"
-            android:visibility="gone"
-            android:layout_marginBottom="@dimen/textm"
+           android:layout_marginBottom="@dimen/textm"
             android:id="@+id/addReplyLayout"
             android:orientation="horizontal"
             >
-            <de.hdodenhof.circleimageview.CircleImageView
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/img_reply_thumb"
-                android:layout_margin="5dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@mipmap/ic_launcher"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="0dp" />
+            <include layout="@layout/custom_rounded_image"
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                ></include>
 
             <EditText
                 android:id="@+id/writeReply"
@@ -192,10 +135,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textCursorDrawable="@color/black"
-                android:background="@drawable/rectangle_shape_grey"
-                android:hint="@string/comment"
-                android:textColor="@color/black"
+                android:textCursorDrawable="@color/white"
+                android:textColor="@color/white"
                 android:inputType="text"
                 android:imeOptions="actionNext"
                 android:maxLines="1"
@@ -206,5 +147,4 @@
         </LinearLayout>
 
     </LinearLayout>
--->
 </android.support.design.widget.CoordinatorLayout>

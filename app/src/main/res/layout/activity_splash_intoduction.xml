@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_background_color"
+    android:orientation="vertical"
+    tools:context=".activity.splash.view.SplashIntoduction">
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.3">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            android:id="@+id/main_text"
+            style="@style/TextViewAppearance.Caption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0"
+            android:gravity="center"
+            android:maxEms="17"
+            android:maxLines="2"
+
+            android:padding="@dimen/margin_10dp"
+            android:text="@string/splash_into_image_text"
+            android:textColor="@color/profile_text_color_wahhao"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/wahho_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/main_text"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+
+            app:srcCompat="@drawable/logo_home" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image_dog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            app:srcCompat="@drawable/daisy" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3">
+
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            android:id="@+id/btn_start"
+            style="@style/TextViewAppearance.Title2"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_rounded_wahhao"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="@string/splash_into_btn_txt"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100_percent"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

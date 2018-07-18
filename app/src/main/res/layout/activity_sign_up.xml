@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_theam_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:gravity="center_vertical"
+                android:paddingBottom="2dp"
+
+
+                android:paddingTop="2dp"
+                android:weightSum="1">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/white_100_percent"
+                        android:theme="@style/TextLabel">
+
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/etName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="@string/allowedchar"
+                            android:hint="FULL NAME"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:textColor="@color/white_100_percent"
+                            android:textColorHint="@color/white_100_percent"
+                            android:textSize="16sp" />
+
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/btn_clear_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/cross_btn"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+    -->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lijoin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            android:id="@+id/btn_start"
+            style="@style/TextViewAppearance.Title2"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:background="@drawable/btn_rounded_wahhao"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="@string/join_now"
+            android:textAllCaps="true"
+            android:textColor="@color/white_100_percent"
+            android:textStyle="bold" />
+
+        <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+            android:id="@+id/or_join_with"
+            style="@style/TextViewAppearance.Body2"
+            android:layout_width="match_parent"
+            android:gravity="center|bottom"
+            android:text="@string/or_join_with"
+            android:textAllCaps="true"
+            android:textColor="@color/profile_text_color_wahhao"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <include
+                layout="@layout/custom_rounded_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"></include>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lijoin"
+        android:layout_margin="@dimen/margin_20dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center|top">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/have_a_code"
+                style="@style/TextViewAppearance.Body2"
+                android:layout_width="match_parent"
+                android:gravity="left|bottom"
+                android:text="@string/have_a_code"
+                android:textAllCaps="true"
+                android:textColor="@color/profile_text_color_wahhao"
+                android:textSize="15sp" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/enter_code"
+                style="@style/TextViewAppearance.Title3"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/have_a_code"
+                android:layout_marginTop="-10dp"
+                android:gravity="left|top"
+                android:text="@string/enter_code"
+                android:textAllCaps="true"
+                android:textColor="@color/tabseletced_color"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.6">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1">
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/have_a_acc"
+                style="@style/TextViewAppearance.Body2"
+                android:layout_width="match_parent"
+                android:gravity="right|bottom"
+                android:text="@string/have_a_account"
+                android:textAllCaps="true"
+                android:textColor="@color/profile_text_color_wahhao"
+                android:textSize="15sp" />
+
+            <com.example.lovekeshkumar.projectmvpbase.font.RobotoTextView
+                android:id="@+id/sign_in"
+                style="@style/TextViewAppearance.Title3"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/have_a_acc"
+                android:layout_marginTop="-10dp"
+                android:gravity="right|top"
+                android:text="@string/sign_in"
+                android:textAllCaps="true"
+                android:textColor="@color/tabseletced_color"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

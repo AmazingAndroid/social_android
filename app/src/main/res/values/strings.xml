@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjectMvpBase</string>
+    <string name="app_name">Wahhao social</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="user_name">User Name</string>
     <string name="password">Password</string>
@@ -17,13 +17,13 @@
     <!--==========================fontello=============================-->
     <string name="fontello_hrt_full">&#xe800;</string>
     <string name="fontello_hrt_empty">&#xe801;</string>
-    <string name="fontello_download">&#xe802;</string>
+
     <string name="fontello_upload">&#xe803;</string>
     <string name="fontello_chat">&#xe804;</string>
     <string name="fontello_chat_empty">&#xe805;</string>
     <string name="fontello_hrt2_empty">&#xe806;</string>
     <string name="fontello_hrt2_full">&#xe807;</string>
-    <string name="fontello_edit">&#xe808;</string>
+
     <string name="fontello_video">&#xe809;</string>
     <string name="fontello_cart">&#xe810;</string>
     <string name="fontello_location">&#xe80a;</string>
@@ -33,6 +33,37 @@
     <string name="fontello_search">&#xe80f;</string>
     <string name="fontello_toggal_off">&#xf204;</string>
     <string name="fontello_toggal_on">&#xf205;</string>
+
+
+    <string name="fontello_linkdin_rounded_icon">&#xf319;</string>
+    <string name="fontello_linkdin">&#xf318;</string>
+    <string name="fontello_twiter_rounded">&#xf316;</string>
+    <string name="fontello_twitter">&#xf315;</string>
+    <string name="fontello_google_plus">&#xf30f;</string>
+    <string name="fontello_facebook">&#xf30e;</string>
+    <string name="fontello_visa">&#xf1f0;</string>
+    <string name="fontello_paypal">&#xf1f4;</string>
+    <string name="fontello_master_card">&#xf1f3;</string>
+    <string name="fontello_download">&#xe82e;</string>
+    <string name="fontello_right_tick">&#xe81b;</string>
+    <string name="fontello_right_tick_another">&#xe829;</string>
+    <string name="fontello_stop">&#xe827;</string>
+    <string name="fontello_tag">&#xe826;</string>
+    <string name="fontello_video_play_btn">&#xe825;</string>
+    <string name="fontello_msg">&#xe824;</string>
+    <string name="fontello_filter">&#xe823;</string>
+    <string name="fontello_retry">&#xe822;</string>
+    <string name="fontello_arrow_with_stick_right">&#xe81f;</string>
+    <string name="fontello_arrow_without_stick_right">&#xe814;</string>
+    <string name="fontello_arrow_with_stick_left">&#xe81e;</string>
+    <string name="fontello_arrow_without_stick_left">&#xe813;</string>
+    <string name="fontello_warning">&#xe81a;</string>
+    <string name="fontello_cross">&#xe817;</string>
+    <string name="fontello_copy">&#xe816;</string>
+    <string name="fontello_edit">&#xe815;</string>
+    <string name="fontello_wahhao_logo">&#xe812;</string>
+
+
     <string name="what_a">What a handsome boy!</string>
     <string name="biscut">Biscuit wears Caspar in Pearled Tortoise</string>
     <string name="hashtag">\@warbyparker</string>
@@ -51,6 +82,14 @@
     <string name="followers">followers</string>
     <string name="following">following</string>
     <string name="myprofile">my profile</string>
+    <string name="splash_into_btn_txt">Start your experience</string>
+    <string name="join_now">JOIN NOW</string>
+    <string name="splash_into_image_text">An innovative app that modernizes the way you shop, socialize and share</string>
+    <string name="have_a_code">Have an invite?</string>
+    <string name="have_a_account">HAVE AN ACCOUNT?</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="enter_code">ENTER CODE</string>
+    <string name="or_join_with">OR JOIN WITH</string>
 
 
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>

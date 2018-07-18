@@ -40,8 +40,13 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
+
+import com.example.lovekeshkumar.projectmvpbase.R;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 import java.io.File;
@@ -960,7 +965,17 @@ public class CommonMethod  {
 
 
 
-
+    public static void animation2(View mLogo, Context context) {
+        mLogo.setAlpha(1.0F);
+        Animation anim = AnimationUtils.loadAnimation(context, R.anim.translate_top_to_center);
+        mLogo.startAnimation(anim);
+    }
+    public static void animation3(View view) {
+        ObjectAnimator alphaAnimation = ObjectAnimator.ofFloat(view, "alpha", 0.0F, 1.0F);
+        alphaAnimation.setStartDelay(1000);
+        alphaAnimation.setDuration(500);
+        alphaAnimation.start();
+    }
 
 
 }

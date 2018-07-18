@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 import retrofit2.Response;
 
-import static com.example.lovekeshkumar.projectmvpbase.logutill.LogUtils.LOGD;
-import static com.example.lovekeshkumar.projectmvpbase.logutill.LogUtils.makeLogTag;
+import static com.example.lovekeshkumar.projectmvpbase.utility.LogUtils.LOGD;
+import static com.example.lovekeshkumar.projectmvpbase.utility.LogUtils.makeLogTag;
 
 /**
  * Created by Mukesh on 12/16/2017.

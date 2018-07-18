@@ -886,8 +886,6 @@ public class CommonMethod  {
 
     }
 
-
-
     public static List<Feed> getFeedList(){
         List<Feed> list=new ArrayList<>();
         List<String> urls=new ArrayList<>();
@@ -934,6 +932,29 @@ public class CommonMethod  {
     }
 
 
+
+    public static ArrayList<StoreDataModel> getStaticListProduct() {
+        ArrayList<StoreDataModel> mCountryList=new ArrayList<>();
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/1.jpg", "00:02:10", false, "jet", "reese’s pean...", "", "$10.99", "$9.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/2.jpg", "00:05:45", false, "warbyparker", "Chamberlain", "Mission Clay...", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/3.jpg", "00:01:40", false, "warbyparker", "Evvy", "Moonstone", "$95", "$92.99", true));
+
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/1.jpg", "00:02:10", false, "jet", "reese’s pean...", "", "$10.99", "$9.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/2.jpg", "00:05:45", false, "warbyparker", "Chamberlain", "Mission Clay...", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/3.jpg", "00:01:40", false, "warbyparker", "Evvy", "Moonstone", "$95", "$92.99", true));
+
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/0.jpg", "00:09:10", false, "warbyparker", "coley", "crystal", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/1.jpg", "00:02:10", false, "jet", "reese’s pean...", "", "$10.99", "$9.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/2.jpg", "00:05:45", false, "warbyparker", "Chamberlain", "Mission Clay...", "$95", "$92.99", true));
+        mCountryList.add(new StoreDataModel("http://pengaja.com/uiapptemplate/avatars/3.jpg", "00:01:40", false, "warbyparker", "Evvy", "Moonstone", "$95", "$92.99", true));
+
+        return mCountryList;
+    }
 
     //Google Aanalytics
 

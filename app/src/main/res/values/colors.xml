@@ -79,4 +79,6 @@
     <color name="profile_theam_color">#112341</color>
     <color name="profile_background_color">#0c1524</color>
     <color name="hashtag_color">#b7c6e0</color>
+    <color name="divider_color_wahhao">#343c4a</color>
+    <color name="profile_text_color_wahhao">#b7c6e0</color>
 </resources>

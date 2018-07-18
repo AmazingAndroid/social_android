@@ -6,10 +6,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoRecyclerViewFragment;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentFour;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentOne;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentThree;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentTwo;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentFour;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentThree;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentTwo;
 
 public final class PageAdapter extends FragmentStatePagerAdapter {
 

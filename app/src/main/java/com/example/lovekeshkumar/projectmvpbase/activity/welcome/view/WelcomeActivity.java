@@ -26,13 +26,16 @@ import com.example.lovekeshkumar.projectmvpbase.activity.listener.RecyclerClickL
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.fragment.VideoRecyclerViewFragment;
 
 import com.example.lovekeshkumar.projectmvpbase.basemodel.BaseActivity;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.model.Constant;
+
 
 
 import com.example.lovekeshkumar.projectmvpbase.demofeed.feed.view.FeedFragment;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentThree;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.BlankFragmentTwo;
-import com.example.lovekeshkumar.projectmvpbase.fragment.fragmentmain.view.FragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentOne;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentThree;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.BlankFragmentTwo;
+import com.example.lovekeshkumar.projectmvpbase.fragment.video_list_demo.view.FragmentOne;
+
 import com.example.lovekeshkumar.projectmvpbase.utility.FragmentHistory;
 
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;

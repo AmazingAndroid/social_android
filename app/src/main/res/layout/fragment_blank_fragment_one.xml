@@ -3,13 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    tools:context=".fragment.fragmentmain.view.BlankFragmentOne">
+    android:background="@color/profile_background_color"
+    tools:context=".fragment.video_list_demo.view.BlankFragmentOne">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <include layout="@layout/recycler_view"></include>
 
 </FrameLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/profile_background_color"
     android:orientation="vertical"
-    tools:context=".activity.profile.fragment.ProfileFragment">
+    tools:context=".activity.brand_profile.fragment.BrandProfileFragment">
 
 
     <RelativeLayout

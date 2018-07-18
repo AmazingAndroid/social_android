@@ -6,17 +6,14 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.view.WindowManager;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import com.example.lovekeshkumar.projectmvpbase.R;
 import com.example.lovekeshkumar.projectmvpbase.activity.login.view.LoginActivity;
 import com.example.lovekeshkumar.projectmvpbase.activity.splash.presenter.ISplashPresenter;
 import com.example.lovekeshkumar.projectmvpbase.activity.splash.presenter.SplashPresenterImpl;
 import com.example.lovekeshkumar.projectmvpbase.activity.welcome.view.WelcomeActivity;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
+import com.example.lovekeshkumar.projectmvpbase.model.Constant;
 import com.example.lovekeshkumar.projectmvpbase.utility.Utility;
 
 public class SplashActivity extends AppCompatActivity implements ISplashView {

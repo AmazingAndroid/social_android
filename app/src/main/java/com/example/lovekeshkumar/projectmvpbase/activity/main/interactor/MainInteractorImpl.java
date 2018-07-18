@@ -2,21 +2,9 @@ package com.example.lovekeshkumar.projectmvpbase.activity.main.interactor;
 
 
 
-import com.example.lovekeshkumar.projectmvpbase.activity.home.interactor.IHomeInteractor;
 import com.example.lovekeshkumar.projectmvpbase.activity.home.presenter.HomePresenterImpl;
-import com.example.lovekeshkumar.projectmvpbase.constant.Constant;
-import com.example.lovekeshkumar.projectmvpbase.model.Country;
-import com.example.lovekeshkumar.projectmvpbase.model.ProfilesRequest;
 import com.example.lovekeshkumar.projectmvpbase.model.RequestLogin;
-import com.example.lovekeshkumar.projectmvpbase.network.ApiClient;
-import com.example.lovekeshkumar.projectmvpbase.network.ApiServices;
 import com.example.lovekeshkumar.projectmvpbase.network.NetworkManager;
-
-import io.reactivex.Observable;
-import io.reactivex.android.schedulers.AndroidSchedulers;
-import io.reactivex.schedulers.Schedulers;
-import okhttp3.ResponseBody;
-import retrofit2.Response;
 
 /**
  * Created by Mukesh on 12/16/2017.

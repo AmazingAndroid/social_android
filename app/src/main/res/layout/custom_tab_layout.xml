@@ -14,7 +14,10 @@
         app:tabIndicatorHeight="0dp"
         app:tabSelectedTextColor="@color/tabseletced_color"
         app:tabTextColor="@color/white_30_percent" />
-
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/white_100_percent"></View>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/tabanim_viewpager"
